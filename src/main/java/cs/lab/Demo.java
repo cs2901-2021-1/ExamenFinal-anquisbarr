@@ -7,7 +7,6 @@ public class Demo {
 
     public static void main(String[] args){
         User.userLogin(scan,Boolean.TRUE);
-        User.userLogout(scan);
     }    
 }
     
