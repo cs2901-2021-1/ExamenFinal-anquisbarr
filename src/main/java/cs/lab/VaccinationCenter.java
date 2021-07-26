@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class VaccinationCenter{
     Integer centerId;
     ArrayList<Person> vaccinationList;
+    Boolean status;
     
     VaccinationCenter(){
         //DEFAULT CONSTRUCTOR
