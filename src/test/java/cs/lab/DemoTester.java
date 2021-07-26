@@ -25,7 +25,7 @@ class DemoTest {
     @Test
     void createPerson(){
         String age = User.randomAge();
-        String dni = User.randomDni();
+        String dni = User.randomAge();
         Person expected = new Person("anquisbarr","",age,dni);
         Person actual = new Person();
 
@@ -40,4 +40,5 @@ class DemoTest {
         Assert.assertEquals(expected.getDni(),actual.getDni());
     }
 
+    
 };

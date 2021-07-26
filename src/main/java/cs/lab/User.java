@@ -47,6 +47,16 @@ public class User {
         return true;
     }
 
+    public static boolean userLogout(Scanner scan){
+        logger.info("Would you like to log Out");
+        String line = scan.nextLine();
+        if (line.equals("yes")){
+            status = false;
+            return true;
+        }
+        return false;
+    }
+
     public static String reverseString(String word) {
         StringBuilder sb = new StringBuilder();
         sb.append(word);

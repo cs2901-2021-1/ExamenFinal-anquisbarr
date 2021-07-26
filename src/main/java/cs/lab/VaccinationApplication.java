@@ -7,10 +7,10 @@ public class VaccinationApplication {
     private static VaccinationApplication instance;
     ArrayList<VaccinationCenter> vaccinationCenters;
 
-    VaccinationApplication(){
-        //DEFAULT CONSTRUCTOR
+    private VaccinationApplication(){
+        vaccinationCenters = new ArrayList<>();
     }
-
+    
     public static synchronized VaccinationApplication getInstance(){
         if(instance == null){
             instance = new VaccinationApplication();
@@ -21,7 +21,7 @@ public class VaccinationApplication {
 
     //It will release a VaccinationCenter 
     public void release(Integer centerId){
-        
+
     }
 
     //It will put on hold a VaccinationCenter
@@ -30,6 +30,6 @@ public class VaccinationApplication {
     }
 
     public void notify(Person person){
-
+        
     }
 }
